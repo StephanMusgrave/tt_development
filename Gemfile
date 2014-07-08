@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -29,12 +29,34 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+gem 'devise'
+gem 'websocket-rails'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+# gem 'paperclip-rack', require: 'paperclip/rack'
+gem 'aws-sdk'
+gem 'bootstrap-sass'
+gem 'thin'
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'newrelic_rpm'
+gem 'gmaps4rails', '~> 2.1.2'
+gem 'geocoder'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
+group :test do
+  # gem 'rmagick'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'poltergeist'
+  gem "factory_girl_rails"
+  gem 'capybara-email'
+  gem 'cucumber-rails', require: false
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
+end

@@ -1,17 +1,23 @@
 # A development area to evaluate technologies for TT Limited
 
 ## Objectives
+To replicate and improve on an existing website
+The current website is based on PHP and wordpress and is not documented fully
 
 ## How to run it
+
+
 http://www.supersaas.com/schedule/StephanMusgrave/Bridge_Cottage
 
 ## Technologies used
 
 |Technology                 |Used for                        |
 |---------------------------|--------------------------------|
+|ruby 2.1.2                 |                                |
+|Rails 4.1.1                |                                |
 |SuperSaas                  |Client bookings                 |
-|Aweber |email marketing and autoresponder software |
-|Aweber Labs |API for AWeber | 
+|Aweber                     |email marketing and autoresponder software |
+|Aweber Labs                |API for AWeber                  | 
 
 
 ## Developed by
@@ -19,5 +25,3 @@ http://www.supersaas.com/schedule/StephanMusgrave/Bridge_Cottage
 [Steve Musgrave]
 
 [Steve Musgrave]:https://github.com/StephanMusgrave
-ruby 2.1.2p95 (2014-05-08 revision 45877) [x86_64-darwin13.0]
-Rails 4.1.1
